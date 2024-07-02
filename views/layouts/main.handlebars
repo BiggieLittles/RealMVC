@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kathy's Tech Blog </title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/style.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+
+<div class="container wrapper">
+<header class="row">
+<h1><a class="logo" href="/"> <img src="/images/techblog.png" alt="Tech Blog" width="150" height="150"></a></h1>
+
+<body>
+
+      <nav>
+        <ul class="navbar">
+          
+              <li><a class="link" href="/">Home</a></li>
+               <li><a class="link" href="/dashboard">Dashboard</a></li>
+              {{#if loggedIn}}
+               <li><a class="link" href="/" id="logout">Logout</a></li>
+              {{else}}
+               <li><a class="link" href="/login">Login</a></li>
+              {{/if}}
+        </ul>
+      </nav>
+
+    
+</header>
+
+<main>
+  {{{ body }}}
+</main>
+
+<footer id="contact">
+    <div class="project-header">Contact Me </div>
+    <div class="social-icons">
+      <div class="Linkin">
+        <a href="https://www.linkedin.com/in/kathy-lopez-730926140/"><i class="fab fa-linkedin"></i></a>
+      </div>
+      <div class="ig">
+        <a href="https://github.com/kathylopez97/"> <i class="fab fa-github"></i></a>
+      </div>
+      <div class="X">
+        <a href="https://twitter.com/home"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+   <script src="https://kit.fontawesome.com/e5495887fa.js" crossorigin="anonymous"></script>
+     </body>
+     </html>
+  </footer>
+
+    {{#if loggedIn}}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+    <script src="/js/logout.js"></script>
+    {{/if}}
+</div>
+</body>

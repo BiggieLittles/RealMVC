@@ -1,6 +1,5 @@
 // import sequelize
-const Sequelize = require('sequelize');
-require('dotenv').config();
+const Sequelize = require('sequelize')
 // this functions lets sequelize to connect database to run server
 let sequelize;
 // connect jawsurl using sequelize
